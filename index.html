@@ -291,16 +291,16 @@ function setupStage() {
 
 function setStageDimensions(stage) {
   // Make the skybox fit the stage.
-  var material = skybox.material;
-  scene.remove(skybox);
-
-  // Size the skybox according to the size of the actual stage.
-  var geometry = new THREE.BoxGeometry(stage.sizeX, boxSize, stage.sizeZ);
-  skybox = new THREE.Mesh(geometry, material);
+  // var material = skybox.material;
+  // scene.remove(skybox);
+  //
+  // // Size the skybox according to the size of the actual stage.
+  // var geometry = new THREE.BoxGeometry(stage.sizeX, boxSize, stage.sizeZ);
+  // skybox = new THREE.Mesh(geometry, material);
 
   // Place it on the floor.
-  skybox.position.y = boxSize/2;
-  scene.add(skybox);
+  // skybox.position.y = boxSize/2;
+  // scene.add(skybox);
 
   // Place the cube in the middle of the scene, at user height.
   cube.position.set(0, controls.userHeight, 0);
